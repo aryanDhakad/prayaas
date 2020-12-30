@@ -4,8 +4,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: azure;
+
 }
+
+.nav-item:hover {
+    background-color: yellow;
+    border-radius: 15px;
+    border: 3px solid green;
+
+}
+
+
 
 .fa-cog {
     color: green;
@@ -91,6 +100,7 @@ body {
     border: white solid 4px;
     transition: .2s ease-in-out;
     text-align: center;
+
 }
 
 .crd1:hover {
@@ -200,4 +210,79 @@ body {
     border-radius: 70%;
     background-color: green;
     transform: rotateY(180deg);
+}
+
+/* CARD3 */
+/* .box1 {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    border: 5px solid grey;
+    border-radius: 25px;
+
+}
+
+.box1 * {
+    transition: all 0.4s ease-in-out;
+}
+
+.box1:hover {
+    border: 5px solid green;
+    transform: scale(1.05)
+}
+
+.box1:hover img {
+    opacity: 0.1;
+}
+
+.box1:hover .flow-up1 {
+    visibility: visible;
+    transform: translateY(-200px)
+} */
+
+/* CARD 4 */
+.crd4-body {
+    position: relative;
+    bottom: 50px;
+    width: 60%;
+    height: 240px;
+    background-color: white;
+    transition: .5s ease-in-out;
+    margin: 0 auto;
+}
+
+.crd4:hover .crd4-body {
+    bottom: 0px;
+}
+
+/* EVENTS CARD */
+
+.clip.event {
+    height: 330px;
+    box-shadow: -5px 5px 0 0 purple;
+}
+
+.clip-container .clip.clip1.event {
+    background-image: url("https://picsum.photos/id/1022/200/300");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
+}
+
+
+.clip-container .clip.clip2.event {
+    background-image: url("https://picsum.photos/id/1021/200/300");
+    background-size: cover;
+    clip-path: polygon(0 70%, 100% 50%, 100% 100%, 0 100%);
+}
+
+
+
+.clip-container:hover .clip.event {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.clip-container .clip.event:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
