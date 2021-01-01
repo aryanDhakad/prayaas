@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
+html,
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    z-index: 5;
+}
+
 body {
     margin: 0;
     padding: 0;
 
+}
+
+div {
+    margin: 0;
 }
 
 .nav-item:hover {
@@ -14,6 +27,14 @@ body {
 
 }
 
+#nvbar1 {
+    transition: height 0.3s linear;
+    border-radius: 50px;
+    padding: 0 50px 10px;
+    background-color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
 
 
 .fa-cog {
@@ -259,30 +280,35 @@ body {
 
 /* EVENTS CARD */
 
-.clip.event {
-    height: 330px;
-    box-shadow: -5px 5px 0 0 purple;
+.clip-container.event {
+    box-shadow: 0 0 0 3px purple;
 }
 
-.clip-container .clip.clip1.event {
+.clip {
+    height: 330px;
+
+}
+
+.clip-container .clip.clip1_event {
     background-image: url("https://picsum.photos/id/1022/200/300");
     background-size: cover;
+
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
 }
 
 
-.clip-container .clip.clip2.event {
-    background-image: url("https://picsum.photos/id/1021/200/300");
-    background-size: cover;
+.clip-container .clip.clip2_event {
+
+    background-color: rgb(248, 248, 177);
     clip-path: polygon(0 70%, 100% 50%, 100% 100%, 0 100%);
 }
 
 
 
-.clip-container:hover .clip.event {
+.clip-container.event:hover .clip {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
-.clip-container .clip.event:hover {
+.clip-container.event .clip:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
