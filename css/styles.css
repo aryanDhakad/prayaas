@@ -1,6 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
+.loader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+.animation-wrapper {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  
+.sphere-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 580px;
+    height: 580px;
+    margin: -290px 0 0 -290px;
+  }
+  
+  .sphere path {
+    fill: url(#sphereGradient);
+    stroke-width: 1px;
+    stroke: rgba(80,80,80,.35);
+    backface-visibility: hidden;
+  }
+  
+  @media (min-width: 500px) {
+    .sphere path {
+      stroke-width: .4px;
+    }
+  }
+
+.transition-fadeIn {
+
+ transform: translateX(0);
+ transition: 5s ease-in;
+}
+
+html.is-animating .transition-fadeIn{
+  transform: translateX(100%);
+  
+}
+/* 
+html.is-leaving .transition-fade{
+  opacity: 0;
+  transform: translateY(100%);
+} */
+
+
+
 html,
 body {
     overflow-x: hidden;
@@ -20,21 +74,81 @@ div {
     margin: 0;
 }
 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* NAVBAR STYLES */
+#nvbar {
+    transition: height 0.3s linear;
+   
+   
+    padding: 10px 50px;
+   height: 80px;
+    font-size: 1.4rem;
+   background-color: black;
+}
+
+li{
+    z-index: 1;
+    margin: 5px 50px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+li a:hover{
+    color: green;
+}
+
+li a:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+     transform: scaleY(2); 
+     visibility: hidden; 
+     z-index: -1;
+     transition: 0.3s ease-in-out;
+     
+}
+li a:hover:before{
+    transform: scaleY(1);
+    visibility: visible;
+}
+li a:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    transform: scale(0);
+     transition: 0.3s ease-in-out;
+    border-radius: 10px;
+     z-index: -1;
+    
+}
+li a:hover:after{
+   transform: scale(1);
+   
+}
+/* 
 .nav-item:hover {
     background-color: yellow;
     border-radius: 15px;
     border: 3px solid green;
 
-}
+} */
 
-#nvbar1 {
-    transition: height 0.3s linear;
-    border-radius: 50px;
-    padding: 0 50px 10px;
-    background-color: white;
-    font-size: 1.4rem;
-    margin-top: 20px;
-}
+
+
 
 
 .fa-cog {
@@ -115,18 +229,68 @@ div {
 }
 
 /* SECTION 2 */
+
 .crd1 {
     margin: 10px;
     padding: 15px;
     border: white solid 4px;
     transition: .2s ease-in-out;
     text-align: center;
-
+    background: rgb(255, 255, 255);
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+    --border-size: 3px;
 }
 
-.crd1:hover {
-    border: green solid 2px
+.border-pop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: var(--border-size) solid green;
+    transition: top, left, right, bottom, 100ms ease-in-out;
 }
+
+.border-pop:hover::before,
+.border-pop:focus::before ,
+.border-pop.event{
+    top: calc(var(--border-size) * -3);
+    left: calc(var(--border-size) * -3);
+    right: calc(var(--border-size) * -3);
+    bottom: calc(var(--border-size) * -3);
+}
+
+.sliding-back {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.sliding-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: blue;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.sliding-back:hover::before,
+.sliding-back:focus::before {
+    transform: scaleX(1);
+    color: white;
+}
+
+
+
 
 .crd2 {
     min-height: 600px;
@@ -281,8 +445,13 @@ div {
 /* EVENTS CARD */
 
 .clip-container.event {
+    transition: all 0.5s ease-in-out;
     box-shadow: 0 0 0 3px purple;
 }
+.clip-container.event:hover{
+    box-shadow: 0 0 0 6px purple;
+}
+
 
 .clip {
     height: 330px;
