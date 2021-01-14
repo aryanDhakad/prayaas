@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Prayaas</title>
@@ -25,8 +24,10 @@
     <script src="https://rawgit.com/bradley/Blotter/master/build/materials/liquidDistortMaterial.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/channelSplitMaterial.min.js"></script>
+    <!-- SWUP JS -->
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
 
-    <!-- Anime JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"
       integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ=="
@@ -45,7 +46,7 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg px-3" id="nvbar">
       <a class="navbar-brand ml-4 fs-2" href="#"> PraYaas </a>
@@ -81,229 +82,157 @@
       </div>
     </nav>
 
-    
-
-
-
-
-
-
-
-
-    <div class="row">
-
-
- 
-
-
-      <div class="col-lg-3 col-sm-6 jic p-3">
-        <div class="clip-container event fade-in" style="height: 330px">
-          <div class="clip clip1_event"></div>
-          <div
-            class="clip clip2_event d-flex flex-column-reverse align-items-end text-right pb-5 px-3 pt-0"
-          >
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-lg px-4 py-2 w-75 shadow-lg " data-bs-toggle="modal" data-bs-target="#diwali_event">
-                Diwali
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="blog_card">
+            <h2>Title of Blog</h2>
+            <div class="static-1">
+              <h3>Name of Writer</h3>
+              <h3>Date of publish</h3>
+            </div>
+            <div class="flow-up1">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 py-2 shadow-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#blog_date1"
+              >
+                Read More
               </button>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              quis, quaerat dolore tempora, !
-            </p>
+            </div>
           </div>
         </div>
-      </div>
-
-
-
-      <div class="col-lg-3 col-sm-6 jic p-3">
-        <div class="clip-container event fade-in" style="height: 330px">
-          <div class="clip clip1_event"></div>
-          <div
-            class="clip clip2_event d-flex flex-column-reverse align-items-end text-right pb-5 px-3 pt-0"
-          >
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-lg px-4 py-2 w-75 shadow-lg " data-bs-toggle="modal" data-bs-target="#holi_event">
-                Holi
+        <div class="col-lg-3">
+          <div class="blog_card">
+            <h2>Title of Blog</h2>
+            <div class="static-1">
+              <h3>Name of Writer</h3>
+              <h3>Date of publish</h3>
+            </div>
+            <div class="flow-up1">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 py-2 shadow-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#blog_date1"
+              >
+                Read More
               </button>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              quis, quaerat dolore tempora, !
-            </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 jic p-3">
-        <div class="clip-container event fade-in" style="height: 330px">
-          <div class="clip clip1_event"></div>
-          <div
-            class="clip clip2_event d-flex flex-column-reverse align-items-end text-right pb-5 px-3 pt-0"
-          >
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-lg px-4 py-2 w-75 shadow-lg " data-bs-toggle="modal" data-bs-target="#lodhi_event">
-                Lodhi
+        <div class="col-lg-3">
+          <div class="blog_card">
+            <h2>Title of Blog</h2>
+            <div class="static-1">
+              <h3>Name of Writer</h3>
+              <h3>Date of publish</h3>
+            </div>
+            <div class="flow-up1">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 py-2 shadow-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#blog_date1"
+              >
+                Read More
               </button>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              quis, quaerat dolore tempora, !
-            </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 jic p-3">
-        <div class="clip-container event fade-in" style="height: 330px">
-          <div class="clip clip1_event"></div>
-          <div
-            class="clip clip2_event d-flex flex-column-reverse align-items-end text-right pb-5 px-3 pt-0"
-          >
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-lg px-4 py-2 w-75 shadow-lg " data-bs-toggle="modal" data-bs-target="#rakshaBandhan_event">
-                Raksha Bandhan
+        <div class="col-lg-3">
+          <div class="blog_card">
+            <h2>Title of Blog</h2>
+            <div class="static-1">
+              <h3>Name of Writer</h3>
+              <h3>Date of publish</h3>
+            </div>
+            <div class="flow-up1">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 py-2 shadow-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#blog_date1"
+              >
+                Read More
               </button>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              quis, quaerat dolore tempora, !
-            </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="p-5 my-3 fade-in">
-      <h1 class="text-center" style="letter-spacing: 10px">Our Testimonies</h1>
-
-      <div class="testimony">
-        <h3 class="text-center fs-2 po">Name of person, Age</h3>
-        <img
-          src="https://picsum.photos/id/500/200/250"
-          alt="nf"
-          class="rounded float-right"
-        />
-        <div class="content w-75 fs-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          cumque non quis reprehenderit nam sequi maiores voluptate facere quae,
-          unde repellat aliquid accusamus quidem rem voluptates alias
-          <br />
-          magni, exercitationem deserunt officia numquam accusantium. Incidunt
-          beatae ea sunt perferendis unde doloremque quidem, sapiente hic
-          necessitatibus doloribus expedita harum minus cupiditate! Similique!
-        </div>
-      </div>
-
-      <div class="testimony">
-        <h3 class="text-center fs-2 po">Name of person, Age</h3>
-        <img
-          src="https://picsum.photos/id/500/200/250"
-          alt="nf"
-          class="rounded float-right"
-        />
-        <div class="content w-75 fs-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          cumque non quis reprehenderit nam sequi maiores voluptate facere quae,
-          unde repellat aliquid accusamus quidem rem voluptates alias
-          <br />
-          magni, exercitationem deserunt officia numquam accusantium. Incidunt
-          beatae ea sunt perferendis unde doloremque quidem, sapiente hic
-          necessitatibus doloribus expedita harum minus cupiditate! Similique!
-        </div>
-      </div>
-
-      <div class="testimony">
-        <h3 class="text-center fs-2 po">Name of person, Age</h3>
-        <img
-          src="https://picsum.photos/id/500/200/250"
-          alt="nf"
-          class="rounded float-right"
-        />
-        <div class="content w-75 fs-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          cumque non quis reprehenderit nam sequi maiores voluptate facere quae,
-          unde repellat aliquid accusamus quidem rem voluptates alias
-          <br />
-          magni, exercitationem deserunt officia numquam accusantium. Incidunt
-          beatae ea sunt perferendis unde doloremque quidem, sapiente hic
-          necessitatibus doloribus expedita harum minus cupiditate! Similique!
-        </div>
-      </div>
-    </div>
-
-
-
 
     <!-- MODAL CONTENT SECTION -->
-    
-<div class="modal fade" id="diwali_event" tabindex="-1" aria-labelledby="diwali_eventLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="diwali_eventLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsum nulla recusandae omnis? Odio itaque ex dolor laboriosam hic rem.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+    <div
+      class="modal fade"
+      id="blog_date1"
+      tabindex="-1"
+      aria-labelledby="blog_date1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="blog_date1Label">BLOG 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            modi excepturi quam iure obcaecati nulla vitae porro asperiores
+            impedit perferendis delectus quae alias maxime consequatur!
+            Asperiores quasi ipsam voluptas mollitia doloribus accusantium vero
+            beatae, dolor natus veritatis voluptatum tenetur dolores error autem
+            in culpa illum, ex ut! Ut voluptatum, asperiores, ipsum error
+            officiis tempora numquam vero assumenda repellendus nobis quod modi
+            amet, officia quaerat facilis esse veniam? Facilis nam, voluptatum
+            cumque, ex temporibus, eum aliquid ullam quo debitis et esse!
+            Tenetur voluptatibus eos aspernatur. Odio nam tenetur a iusto, sit
+            sed beatae veritatis, excepturi minima nobis eius quaerat accusamus
+            sequi optio. Dolores cupiditate iusto soluta dolor. Tempore earum
+            eos animi iure numquam dolor officia unde magni laudantium
+            excepturi. Quos omnis minima culpa natus voluptas necessitatibus
+            corporis impedit vel aliquam consectetur? Corporis omnis ducimus
+            fugiat voluptate minima exercitationem, ipsam perferendis quaerat
+            eos delectus culpa maxime atque odit accusantium veritatis
+            voluptatibus labore, rem maiores, hic voluptates praesentium quae
+            officia fugit. Neque unde possimus iusto sequi ipsam pariatur,
+            impedit nesciunt nulla! Accusamus voluptatibus tempora dolore
+            delectus, ullam provident velit facilis voluptas hic quibusdam
+            doloribus laborum amet ad aperiam, quisquam saepe ea sit rerum.
+            Similique culpa amet, voluptatem accusantium tempore voluptatibus
+            eligendi, veniam fugit maxime corporis, vero molestias qui a minus
+            quia autem veritatis assumenda porro velit consequatur modi. Error,
+            incidunt odio! Quia perspiciatis autem doloribus deserunt obcaecati
+            rem delectus iure iste nisi fuga adipisci iusto, dolores commodi
+            sapiente facilis corporis. Eligendi, iste eaque voluptatibus
+            consectetur ad ab laborum consequuntur illum voluptatem, velit
+            expedita temporibus, perferendis accusamus ea quam totam est eos
+            pariatur minima exercitationem tempore eius tenetur? Similique
+            expedita beatae voluptates rem qui odit, facere accusantium maxime
+            ipsam obcaecati nostrum accusamus esse commodi quam consequuntur
+            porro, alias quod libero officia iusto impedit deserunt dignissimos.
+            Autem asperiores natus ex error sed! Minima, maxime veritatis!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="modal fade" id="holi_event" tabindex="-1" aria-labelledby="holi_eventLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="holi_eventLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique vero, accusantium ex eligendi ipsam molestias ducimus, quaerat delectus nesciunt inventore architecto libero? Voluptatem obcaecati voluptas at alias libero soluta accusamus cumque quisquam dolorum temporibus fuga aut iusto iure cupiditate eum optio accusantium, distinctio architecto eligendi quod voluptates magni id exercitationem.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="lodhi_event" tabindex="-1" aria-labelledby="lodhi_eventLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="lodhi_eventLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos tenetur animi laudantium cumque iusto officiis sit quae maxime, officia error, omnis repellat blanditiis similique. Dolorem laboriosam nobis sapiente! Quod quasi vero ab hic voluptate delectus sit, laborum numquam, fuga dolorem asperiores repudiandae voluptatibus vel? Quisquam officiis error quo incidunt enim!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="rakshaBandhan_event" tabindex="-1" aria-labelledby="rakshaBandhan_eventLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable ">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="rakshaBandhan_eventLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cum ipsam, sed alias error itaque pariatur aliquid at consectetur dolor explicabo debitis? Perferendis, ab excepturi adipisci delectus iusto doloremque explicabo? Ab nemo soluta porro, adipisci totam consectetur enim, saepe, necessitatibus ipsa pariatur at dolore corporis illo quidem quisquam facilis temporibus? At soluta, optio dignissimos officiis ab sequi atque esse dolorum dolore, quo quibusdam error minima dicta itaque inventore neque, reprehenderit necessitatibus quod! Impedit incidunt, delectus nisi sapiente obcaecati dolor quo nesciunt totam ratione aliquam nostrum eligendi. Incidunt omnis explicabo repellat soluta sit cumque maiores corporis eveniet hic consectetur, molestiae quia at veritatis expedita error animi quo debitis voluptatibus. Perferendis, voluptatem. Ab consequatur quas doloribus ut in! Fugiat magni doloremque, adipisci, dolorem fugit facere quis, expedita nostrum officia quas eaque. Neque, laborum, mollitia reprehenderit a iusto quam quibusdam consectetur quae omnis unde nemo deleniti explicabo debitis? Veniam labore quos aut? Nostrum, veniam? Itaque corrupti dicta non. Sit iure nostrum tempore reprehenderit itaque ut architecto saepe deleniti consequuntur non optio veniam libero distinctio aliquam maiores quae odio, dolorum earum animi in soluta consequatur dolorem voluptas magnam? Architecto beatae tenetur odit eum, a earum doloremque fuga suscipit, provident voluptatibus porro veritatis, esse mollitia.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
     <!-- FOOTER REGION -->
     <div
@@ -495,15 +424,22 @@
     <!-- BLOTTER JS -->
     <script src="blotter.js" type="text/javascript"></script>
 
-
     <!-- PARTICLES.JS -->
     <script src="particles/particles.js" type="text/javascript"></script>
     <script src="particles/app.js" type="text/javascript"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js" async defer></script>
   </body>
 </html>
