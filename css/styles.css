@@ -244,7 +244,7 @@ li a:hover:after {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: blue;
+  background-color: rgb(211, 192, 131);
 
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
@@ -253,7 +253,7 @@ li a:hover:after {
 
 .sliding-back:hover::before,
 .sliding-back:focus::before {
-  transform: scaleX(1);
+  transform: scaleX(0.6);
   color: white;
 }
 
@@ -513,3 +513,6 @@ li a:hover:after {
 .blog_card:hover .static-1 {
   opacity: 0.2;
 }
+
+/* MODAL  */
+
