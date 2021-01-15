@@ -8,7 +8,7 @@
   height: 100%;
   width: 100%;
   background-color: white;
-  z-index: 99;
+  z-index: 9;
 }
 .animation-wrapper {
   width: 50%;
@@ -66,6 +66,10 @@ div {
   padding: 10px 50px;
   height: 80px;
   font-size: 1.4rem;
+  background-color: black;
+}
+#nvbar1{
+  z-index: 99;
   background-color: black;
 }
 
@@ -452,7 +456,7 @@ li a:hover:after {
   top: -40px;
   left: 10%;
   margin-bottom: 50px;
-  z-index: 99;
+  z-index: 1;
   background-color: white;
   padding: 10px 50px;
   transition: 0.5s ease-in;
@@ -515,4 +519,13 @@ li a:hover:after {
 }
 
 /* MODAL  */
+.modal-dialog{
+  font-weight: bolder;
+  max-height: 50%;
+  font-size: 1.5rem;
+}
+.modal-body{
+  padding: 2% 10%;
+  font-size: 1.5rem;
+}
 
