@@ -15,16 +15,6 @@
   font-size: 20rem;
 }
 
-.img1{
-  margin: 2% 0;
-  background: url("https://picsum.photos/id/900/600/600") no-repeat;
-  background-size: 100%;
-  
-  transition: 0.4s ease-in-out;
-width: 100%;
-height: 600px;
-
-}
 
 
 
@@ -287,7 +277,11 @@ li a:hover:after {
 .clip-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 750px;
+}
+.clip-container .clip img{
+  width: 100%;
+  height: 100%;
 }
 
 .clip-container .clip {
@@ -300,19 +294,19 @@ li a:hover:after {
 }
 
 .clip-container .clip.clip1 {
-  background-image: url("https://picsum.photos/id/1022/200/300");
+ 
   background-size: cover;
   clip-path: polygon(0 0, 45% 0, 20% 100%, 0% 100%);
 }
 
 .clip-container .clip.clip2 {
-  background-image: url("https://picsum.photos/id/1021/200/300");
+  
   background-size: cover;
   clip-path: polygon(45% 0, 100% 0, 53% 100%, 20% 100%);
 }
 
 .clip-container .clip.clip3 {
-  background-image: url("https://picsum.photos/id/1023/200/300");
+ 
   background-size: cover;
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 53% 100%);
 }
