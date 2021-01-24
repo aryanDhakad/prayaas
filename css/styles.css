@@ -7,7 +7,7 @@
 .loader-wrapper {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: white;
@@ -47,6 +47,7 @@ div {
 *::after {
   box-sizing: border-box;
 }
+
 /* NAVBAR STYLES */
 #nvbar {
   transition: height 0.3s linear;
@@ -56,7 +57,8 @@ div {
   font-size: 1.4rem;
   background-color: black;
 }
-#nvbar1{
+
+#nvbar1 {
   z-index: 99;
   background-color: black;
 }
@@ -69,6 +71,7 @@ li {
   text-align: center;
   font-weight: bolder;
 }
+
 li a:hover {
   color: green;
 }
@@ -87,10 +90,12 @@ li a:before {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 li a:hover:before {
   transform: scaleY(1);
   visibility: visible;
 }
+
 li a:after {
   content: " ";
   position: absolute;
@@ -104,9 +109,11 @@ li a:after {
   border-radius: 10px;
   z-index: -1;
 }
+
 li a:hover:after {
   transform: scale(1);
 }
+
 /* 
 .nav-item:hover {
     background-color: yellow;
@@ -250,11 +257,11 @@ li a:hover:after {
 }
 
 .crd2 {
-  min-height: 600px;
-  width: 400px;
+  height: 500px;
+  width: 300px;
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 10px;
+  margin: 10px auto;
 
   border-radius: 35px;
   border: 1px solid;
@@ -273,13 +280,21 @@ li a:hover:after {
   box-shadow: 10px 0 40px 0 green;
 }
 
+#section3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr));
+  column-gap: 10px;
+}
+
+
 /* CLIP ART */
 .clip-container {
   position: relative;
   width: 100%;
   height: 750px;
 }
-.clip-container .clip img{
+
+.clip-container .clip img {
   width: 100%;
   height: 100%;
 }
@@ -294,19 +309,19 @@ li a:hover:after {
 }
 
 .clip-container .clip.clip1 {
- 
+
   background-size: cover;
   clip-path: polygon(0 0, 45% 0, 20% 100%, 0% 100%);
 }
 
 .clip-container .clip.clip2 {
-  
+
   background-size: cover;
   clip-path: polygon(45% 0, 100% 0, 53% 100%, 20% 100%);
 }
 
 .clip-container .clip.clip3 {
- 
+
   background-size: cover;
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 53% 100%);
 }
@@ -337,8 +352,7 @@ li a:hover:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-reflect: below 0px
-    linear-gradient(transparent, transparent, #0004);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 }
 
 .flip-card:hover {
@@ -407,6 +421,7 @@ li a:hover:after {
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 0 3px purple;
 }
+
 .clip-container.event:hover {
   box-shadow: 0 0 0 6px purple;
 }
@@ -486,12 +501,11 @@ li a:hover:after {
   padding-left: 50px;
   margin: 40px 10px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    -45deg,
-    rgb(136, 130, 243) 49%,
-    rgb(40, 211, 77) 50%
-  );
+  background: linear-gradient(-45deg,
+      rgb(136, 130, 243) 49%,
+      rgb(40, 211, 77) 50%);
 }
+
 .blog_card * {
   transition: 0.4s ease-in-out;
 }
@@ -511,13 +525,22 @@ li a:hover:after {
 }
 
 /* MODAL  */
-.modal-dialog{
+.modal-dialog {
   font-weight: bolder;
   max-height: 70%;
   font-size: 1.5rem;
 }
-.modal-body{
+
+.modal-body {
   padding: 2% 5%;
   font-size: 1.5rem;
 }
 
+
+#events1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, 350px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
