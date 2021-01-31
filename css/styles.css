@@ -29,19 +29,7 @@ body {
   height: 600px;
 }
 
-@media only screen and (max-width: 990px) {
 
-  .nav-link {
-    font-size: 2.5rem;
-  }
-
-  .navbar-brand {
-    transform: scale(1.5);
-    margin-left: 100px;
-  }
-
-
-}
 
 nav {
   z-index: 5;
@@ -191,6 +179,12 @@ li a:hover:after {
 
 
 /* SECTION 1 */
+#main_photo {
+  height: 60%;
+  width: 90%;
+  box-shadow: 0 0 100px 0 black;
+}
+
 #section1 {
   background-image: url("https://picsum.photos/id/1022/200/300");
   background-size: cover;
@@ -533,7 +527,7 @@ li a:hover:after {
   color: white;
   font-weight: bolder;
   min-height: 300px;
-  min-width: 200px;
+  width: 350px;
   overflow: hidden;
   position: relative;
   border: 5px solid grey;
@@ -578,10 +572,38 @@ li a:hover:after {
 .modal-dialog {
   font-weight: bolder;
   max-height: 70%;
+  min-height: 50%;
   font-size: 1.5rem;
 }
 
-.modal-body {
-  padding: 2% 5%;
-  font-size: 1.5rem;
+.modal-footer .md-cls {
+  visibility: hidden;
+}
+
+
+@media only screen and (max-width: 990px) {
+
+  .nav-link {
+    font-size: 2.5rem;
+  }
+
+  .navbar-brand {
+    transform: scale(1.5);
+    margin-left: 100px;
+  }
+
+  .modal-body {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    word-spacing: 0.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .modal-footer .md-cls {
+    visibility: visible;
+  }
+
+  #main_photo {
+    width: 100%;
+  }
 }
