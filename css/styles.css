@@ -19,24 +19,27 @@
 html,
 body {
   overflow-x: hidden;
- 
+
   margin: 0;
   padding: 0;
 }
 
-#main_pic_1{
+#main_pic_1 {
   width: 80%;
   height: 600px;
 }
-@media only screen and (max-width: 990px){
 
- .nav-link{
-   font-size: 2.5rem;
- }
- .navbar-brand{
-   transform: scale(1.5);
-   margin-left: 100px;
- }
+@media only screen and (max-width: 990px) {
+
+  .nav-link {
+    font-size: 2.5rem;
+  }
+
+  .navbar-brand {
+    transform: scale(1.5);
+    margin-left: 100px;
+  }
+
 
 }
 
@@ -62,6 +65,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 /* FADE IN AND SCROLL */
 
 .fade-in {
@@ -285,10 +289,10 @@ li a:hover:after {
 }
 
 #section3 {
-  
+
   display: flex;
   flex-flow: row wrap;
- 
+
 }
 
 
@@ -408,18 +412,20 @@ li a:hover:after {
     transform: translateY(-200px)
 } */
 
-#coordinators{
- 
+#coordinators {
+
   display: flex;
   flex-flow: row wrap;
 
 }
-.crd4{
+
+.crd4 {
   margin: 10px 20px;
   width: 400px;
-  background: rgb(255,255,255);
-background: linear-gradient(127deg, rgba(255,255,255,1) 50%, rgba(15,3,215,0.41780462184873945) 50%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(127deg, rgba(255, 255, 255, 1) 50%, rgba(15, 3, 215, 0.41780462184873945) 50%);
 }
+
 /* CARD 4 */
 .crd4-body {
   position: relative;
@@ -483,7 +489,8 @@ background: linear-gradient(127deg, rgba(255,255,255,1) 50%, rgba(15,3,215,0.417
   padding: 1vh 2vw;
   justify-content: center;
 }
-#events1 .clip-container{
+
+#events1 .clip-container {
   height: 400px;
   width: 350px;
 }
@@ -513,6 +520,7 @@ background: linear-gradient(127deg, rgba(255,255,255,1) 50%, rgba(15,3,215,0.417
   left: 30%;
   padding: 10px;
 }
+
 /* BLOG CARD */
 .flow-up1 {
   position: absolute;
@@ -577,5 +585,3 @@ background: linear-gradient(127deg, rgba(255,255,255,1) 50%, rgba(15,3,215,0.417
   padding: 2% 5%;
   font-size: 1.5rem;
 }
-
-
