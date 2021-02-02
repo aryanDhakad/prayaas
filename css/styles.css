@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:500");
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Crimson+Text&family=Inconsolata&display=swap');
 
 
 /* LOADER PAGE */
@@ -19,10 +19,19 @@
 html,
 body {
   overflow-x: hidden;
-
   margin: 0;
   padding: 0;
+
+  /* font-family: 'Caveat', cursive; */
+  /* font-family: 'Crimson Text', serif; */
+  font-family: 'Inconsolata', monospace;
 }
+
+/* hr {
+  border-bottom: 10px blue dotted;
+  width: 60%;
+  margin: 10px auto;
+} */
 
 #main_pic_1 {
   width: 80%;
@@ -186,10 +195,13 @@ li a:hover:after {
 }
 
 #section1 {
-  background-image: url("https://picsum.photos/id/1022/200/300");
+  background-image: url(../images/section_1_bg.png);
   background-size: cover;
-  font-weight: 800;
-  padding: 100px 20px;
+  color: black;
+  font-weight: bolder;
+  padding: 6vh 3vw;
+  font-size: 3rem;
+  min-height: 300px;
 }
 
 #particles-js {
@@ -245,7 +257,7 @@ li a:hover:after {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: rgb(211, 192, 131);
+  background-color: #96bb7c;
 
   transition: transform 300ms ease-in-out;
   transform: scaleX(0);
@@ -259,8 +271,8 @@ li a:hover:after {
 }
 
 .crd2 {
-  height: 500px;
-  width: 300px;
+  height: 600px;
+  width: 400px;
   font-size: 1.3rem;
   font-weight: bold;
   margin: 10px auto;
@@ -272,10 +284,13 @@ li a:hover:after {
 
 .crd2 img {
   transition: 0.3s ease-in-out;
+  height: 350px;
+  width: 100%;
 }
 
-.crd2 img:hover {
-  transform: scale(1.05) translateY(10px);
+.crd2:hover img {
+  transform: scale(1.07) translateY(10px);
+
 }
 
 .crd2:hover {
@@ -442,6 +457,7 @@ li a:hover:after {
 .clip-container.event {
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 0 3px purple;
+
 }
 
 .clip-container.event:hover {
@@ -450,6 +466,7 @@ li a:hover:after {
 
 .clip {
   height: 330px;
+
 }
 
 .clip-container .clip.clip1_event {
@@ -480,12 +497,12 @@ li a:hover:after {
   column-gap: 10px; */
   display: flex;
   flex-flow: row wrap;
-  padding: 1vh 2vw;
+  padding: 1vw;
   justify-content: center;
 }
 
 #events1 .clip-container {
-  height: 400px;
+  height: 300px;
   width: 350px;
 }
 
@@ -574,12 +591,18 @@ li a:hover:after {
   max-height: 70%;
   min-height: 50%;
   font-size: 1.5rem;
+  /* font-family: 'Crimson Text', serif; */
 }
 
 .modal-footer .md-cls {
   visibility: hidden;
 }
 
+.intro_msg {
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: bolder;
+}
 
 @media only screen and (max-width: 990px) {
 
@@ -597,6 +620,8 @@ li a:hover:after {
     line-height: 2.5rem;
     word-spacing: 0.8rem;
     letter-spacing: 0.1rem;
+    background: rgb(172, 178, 249);
+    background: radial-gradient(circle, rgba(172, 178, 249, 1) 0%, rgba(213, 248, 255, 1) 100%);
   }
 
   .modal-footer .md-cls {
@@ -605,5 +630,9 @@ li a:hover:after {
 
   #main_photo {
     width: 100%;
+  }
+
+  .intro_msg {
+    font-size: 3rem;
   }
 }
